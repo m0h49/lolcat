@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/AudioManager/Music.ogg" type="AudioStream" id=1]
+[ext_resource path="res://Scenes/AudioManager/AudioManager.gd" type="Script" id=2]
+
+[node name="AudioManager" type="Node"]
+script = ExtResource( 2 )
+
+[node name="music_player" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+autoplay = true
+
+[node name="EffectPlayer" type="Node" parent="."]
+
+[node name="effect_player_1" type="AudioStreamPlayer" parent="EffectPlayer"]
+
+[node name="effect_player_2" type="AudioStreamPlayer" parent="EffectPlayer"]
+
+[node name="effect_player_3" type="AudioStreamPlayer" parent="EffectPlayer"]
+
+[node name="effect_player_4" type="AudioStreamPlayer" parent="EffectPlayer"]
+
+[node name="effect_player_5" type="AudioStreamPlayer" parent="EffectPlayer"]
+
+[node name="effect_player_6" type="AudioStreamPlayer" parent="EffectPlayer"]
+
+[node name="effect_player_7" type="AudioStreamPlayer" parent="EffectPlayer"]
+
+[node name="effect_player_8" type="AudioStreamPlayer" parent="EffectPlayer"]
+
+[node name="effect_player_9" type="AudioStreamPlayer" parent="EffectPlayer"]

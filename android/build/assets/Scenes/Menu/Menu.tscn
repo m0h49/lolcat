@@ -1,0 +1,570 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Font/m5x7.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scenes/Menu/Menu.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/World/GrassBackgraund.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/World/WaterAnim/WaterAnim.tres" type="Texture" id=4]
+[ext_resource path="res://Scenes/World/CliffTileset.png" type="Texture" id=5]
+[ext_resource path="res://Scenes/World/Billboard/Alim.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/World/Billboard/BillboardShadow.png" type="Texture" id=7]
+[ext_resource path="res://Scenes/Ball/Ball.png" type="Texture" id=8]
+[ext_resource path="res://Font/Avenixel-Regular.ttf" type="DynamicFontData" id=9]
+
+[sub_resource type="TileSet" id=1]
+0/name = "WaterAnim.tres 0"
+0/texture = ExtResource( 4 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 352, 160 )
+0/tile_mode = 1
+0/autotile/bitmask_mode = 1
+0/autotile/bitmask_flags = [ Vector2( 0, 0 ), 432, Vector2( 0, 1 ), 438, Vector2( 0, 2 ), 54, Vector2( 0, 3 ), 48, Vector2( 1, 0 ), 504, Vector2( 1, 1 ), 511, Vector2( 1, 2 ), 63, Vector2( 1, 3 ), 56, Vector2( 2, 0 ), 216, Vector2( 2, 1 ), 219, Vector2( 2, 2 ), 27, Vector2( 2, 3 ), 24, Vector2( 3, 0 ), 144, Vector2( 3, 1 ), 146, Vector2( 3, 2 ), 18, Vector2( 3, 3 ), 16, Vector2( 4, 0 ), 176, Vector2( 4, 1 ), 182, Vector2( 4, 2 ), 434, Vector2( 4, 3 ), 50, Vector2( 4, 4 ), 178, Vector2( 5, 0 ), 248, Vector2( 5, 1 ), 255, Vector2( 5, 2 ), 507, Vector2( 5, 3 ), 59, Vector2( 5, 4 ), 251, Vector2( 6, 0 ), 440, Vector2( 6, 1 ), 447, Vector2( 6, 2 ), 510, Vector2( 6, 3 ), 62, Vector2( 6, 4 ), 446, Vector2( 7, 0 ), 152, Vector2( 7, 1 ), 155, Vector2( 7, 2 ), 218, Vector2( 7, 3 ), 26, Vector2( 7, 4 ), 154, Vector2( 8, 0 ), 184, Vector2( 8, 1 ), 191, Vector2( 8, 2 ), 506, Vector2( 8, 3 ), 58, Vector2( 8, 4 ), 186, Vector2( 9, 0 ), 443, Vector2( 9, 1 ), 254, Vector2( 9, 2 ), 442, Vector2( 9, 3 ), 190, Vector2( 10, 2 ), 250, Vector2( 10, 3 ), 187 ]
+0/autotile/icon_coordinate = Vector2( 3, 3 )
+0/autotile/tile_size = Vector2( 32, 32 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="TileSet" id=2]
+0/name = "CliffTileset.png 0"
+0/texture = ExtResource( 5 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 352, 160 )
+0/tile_mode = 1
+0/autotile/bitmask_mode = 1
+0/autotile/bitmask_flags = [ Vector2( 0, 0 ), 432, Vector2( 0, 1 ), 438, Vector2( 0, 2 ), 54, Vector2( 0, 3 ), 48, Vector2( 1, 0 ), 504, Vector2( 1, 1 ), 511, Vector2( 1, 2 ), 63, Vector2( 1, 3 ), 56, Vector2( 2, 0 ), 216, Vector2( 2, 1 ), 219, Vector2( 2, 2 ), 27, Vector2( 2, 3 ), 24, Vector2( 3, 0 ), 144, Vector2( 3, 1 ), 146, Vector2( 3, 2 ), 18, Vector2( 3, 3 ), 16, Vector2( 4, 0 ), 176, Vector2( 4, 1 ), 182, Vector2( 4, 2 ), 434, Vector2( 4, 3 ), 50, Vector2( 4, 4 ), 178, Vector2( 5, 0 ), 248, Vector2( 5, 1 ), 255, Vector2( 5, 2 ), 507, Vector2( 5, 3 ), 59, Vector2( 5, 4 ), 251, Vector2( 6, 0 ), 440, Vector2( 6, 1 ), 447, Vector2( 6, 2 ), 510, Vector2( 6, 3 ), 62, Vector2( 6, 4 ), 446, Vector2( 7, 0 ), 152, Vector2( 7, 1 ), 155, Vector2( 7, 2 ), 218, Vector2( 7, 3 ), 26, Vector2( 7, 4 ), 154, Vector2( 8, 0 ), 184, Vector2( 8, 1 ), 191, Vector2( 8, 2 ), 506, Vector2( 8, 3 ), 58, Vector2( 8, 4 ), 186, Vector2( 9, 0 ), 443, Vector2( 9, 1 ), 254, Vector2( 9, 2 ), 442, Vector2( 9, 3 ), 190, Vector2( 10, 2 ), 250, Vector2( 10, 3 ), 187 ]
+0/autotile/icon_coordinate = Vector2( 3, 3 )
+0/autotile/tile_size = Vector2( 32, 32 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.290196, 0.388235, 0.192157, 1 )
+border_color = Color( 0.290196, 0.388235, 0.192157, 1 )
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+shadow_color = Color( 0, 0, 0, 0.705882 )
+shadow_size = 1
+shadow_offset = Vector2( 4, 4 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.290196, 0.388235, 0.192157, 1 )
+border_width_left = 2
+border_width_top = 2
+border_color = Color( 0.290196, 0.388235, 0.192157, 1 )
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+shadow_color = Color( 0, 0, 0, 0.705882 )
+shadow_size = 1
+shadow_offset = Vector2( 3, 3 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 24
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 24
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 9 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.290196, 0.388235, 0.192157, 1 )
+border_width_left = 8
+border_color = Color( 0.290196, 0.388235, 0.192157, 1 )
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+shadow_color = Color( 0, 0, 0, 0.705882 )
+shadow_size = 1
+shadow_offset = Vector2( 5, 5 )
+
+[sub_resource type="DynamicFont" id=8]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 16
+border_color = Color( 0.8, 0.8, 0.8, 0 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.290196, 0.388235, 0.192157, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.290196, 0.388235, 0.192157, 1 )
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+shadow_color = Color( 0, 0, 0, 0.705882 )
+shadow_size = 1
+shadow_offset = Vector2( 4, 4 )
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 1, 1, 0, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.290196, 0.388235, 0.192157, 1 )
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 1, 1, 0, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 1, 1, 0, 1 )
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+corner_detail = 16
+shadow_color = Color( 0, 0, 0, 0.705882 )
+shadow_size = 1
+shadow_offset = Vector2( 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 1, 1, 1, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+corner_detail = 16
+shadow_color = Color( 0, 0, 0, 0.705882 )
+shadow_size = 1
+shadow_offset = Vector2( 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.290196, 0.388235, 0.192157, 1 )
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+shadow_color = Color( 0, 0, 0, 0.705882 )
+shadow_size = 1
+shadow_offset = Vector2( 4, 4 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_top = -16.0
+margin_right = 768.0
+margin_bottom = 360.0
+texture = ExtResource( 3 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WaterTileMap" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -65528, 0, 3, -65519, 0, 0, -65518, 0, 1, -65517, 0, 2, 8, 0, 65539, 16, 0, 0, 17, 0, 65545, 18, 0, 131073, 19, 0, 65543, 65543, 0, 4, 65544, 0, 196615, 65552, 0, 65540, 65553, 0, 131074, 65555, 0, 65539, 65559, 0, 4, 65560, 0, 196610, 131078, 0, 4, 131079, 0, 196615, 131087, 0, 0, 131088, 0, 131079, 131091, 0, 65539, 131094, 0, 4, 131095, 0, 196615, 262143, 0, 196608, 196608, 0, 196609, 196609, 0, 196609, 196610, 0, 196609, 196611, 0, 196609, 196612, 0, 196609, 196613, 0, 196609, 196614, 0, 196615, 196623, 0, 65536, 196624, 0, 65538, 196627, 0, 65539, 196630, 0, 65539, 262159, 0, 65536, 262160, 0, 65538, 262162, 0, 0, 262163, 0, 131079, 262165, 0, 4, 262166, 0, 196615, 327693, 0, 3, 327695, 0, 131072, 327696, 0, 9, 327697, 0, 1, 327698, 0, 131078, 327699, 0, 262149, 327700, 0, 196609, 327701, 0, 196615, 393219, 0, 4, 393220, 0, 196609, 393221, 0, 7, 393223, 0, 4, 393224, 0, 196610, 393228, 0, 196608, 393229, 0, 262152, 393230, 0, 196610, 393232, 0, 131072, 393233, 0, 65542, 393234, 0, 65541, 393235, 0, 131074, 458755, 0, 65539, 458757, 0, 65539, 458759, 0, 65539, 458765, 0, 65539, 458769, 0, 65536, 458770, 0, 65538, 524291, 0, 65539, 524293, 0, 65539, 524295, 0, 65539, 524301, 0, 65539, 524305, 0, 65536, 524306, 0, 65538, 589827, 0, 196612, 589828, 0, 196609, 589829, 0, 196615, 589831, 0, 196612, 589832, 0, 196610, 589837, 0, 196612, 589838, 0, 196610, 589841, 0, 131072, 589842, 0, 131074 )
+
+[node name="CliffTileMap" type="TileMap" parent="."]
+tile_set = SubResource( 2 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -1, 0, 0, -65536, 0, 1, -65535, 0, 1, -65534, 0, 1, -65533, 0, 1, -65532, 0, 1, -65531, 0, 1, -65530, 0, 1, -65529, 0, 2, -65516, 0, 0, -65515, 0, 1, -65514, 0, 1, -65513, 0, 1, -65512, 0, 2, 65535, 0, 65536, 0, 0, 65537, 1, 0, 65537, 2, 0, 65537, 3, 0, 65537, 4, 0, 65537, 5, 0, 65537, 6, 0, 65541, 7, 0, 131074, 20, 0, 65536, 21, 0, 65537, 22, 0, 65541, 23, 0, 131073, 24, 0, 131074, 131071, 0, 65536, 65536, 0, 65537, 65537, 0, 65537, 65538, 0, 65537, 65539, 0, 65537, 65540, 0, 65537, 65541, 0, 65541, 65542, 0, 131074, 65554, 0, 3, 65556, 0, 65536, 65557, 0, 65541, 65558, 0, 131074, 196607, 0, 131072, 131072, 0, 131073, 131073, 0, 131073, 131074, 0, 131073, 131075, 0, 131073, 131076, 0, 131073, 131077, 0, 131074, 131089, 0, 196608, 131090, 0, 262151, 131092, 0, 65536, 131093, 0, 65538, 196626, 0, 131075, 196628, 0, 65540, 196629, 0, 131074, 262150, 0, 3, 262164, 0, 131075, 327681, 0, 3, 327686, 0, 65539, 393217, 0, 65539, 393222, 0, 65539, 393225, 0, 4, 393226, 0, 196609, 393227, 0, 7, 393235, 0, 0, 393236, 0, 2, 458753, 0, 65539, 458758, 0, 65539, 458761, 0, 65539, 458763, 0, 65539, 458771, 0, 65536, 458772, 0, 131077, 458773, 0, 2, 524289, 0, 65539, 524294, 0, 65539, 524297, 0, 262148, 524298, 0, 196609, 524299, 0, 262151, 524307, 0, 65536, 524308, 0, 65537, 524309, 0, 65538, 589825, 0, 65539, 589830, 0, 131075, 589833, 0, 65539, 589835, 0, 65539, 589841, 0, 0, 589842, 0, 1, 589843, 0, 131078, 589844, 0, 65537, 589845, 0, 65538, 655361, 0, 196612, 655362, 0, 196609, 655363, 0, 196609, 655364, 0, 196610, 655369, 0, 131075, 655371, 0, 131075, 655375, 0, 0, 655376, 0, 1, 655377, 0, 131078, 655378, 0, 65537, 655379, 0, 65537, 655380, 0, 65537, 655381, 0, 131077, 655382, 0, 2, 720908, 0, 0, 720909, 0, 1, 720910, 0, 1, 720911, 0, 131078, 720912, 0, 65537, 720913, 0, 65537, 720914, 0, 65537, 720915, 0, 65537, 720916, 0, 65537, 720917, 0, 65537, 720918, 0, 131077, 720919, 0, 1, 720920, 0, 2, 786444, 0, 131072, 786445, 0, 131073, 786446, 0, 131073, 786447, 0, 131073, 786448, 0, 131073, 786449, 0, 131073, 786450, 0, 131073, 786451, 0, 131073, 786452, 0, 131073, 786453, 0, 131073, 786454, 0, 131073, 786455, 0, 131073, 786456, 0, 131074 )
+
+[node name="BillboardShadow" type="Sprite" parent="."]
+position = Vector2( 512, 124 )
+texture = ExtResource( 7 )
+
+[node name="Alim" type="Sprite" parent="."]
+position = Vector2( 512, 80 )
+texture = ExtResource( 6 )
+
+[node name="Play" type="Button" parent="."]
+margin_left = 464.0
+margin_top = 168.0
+margin_right = 614.0
+margin_bottom = 193.0
+rect_min_size = Vector2( 150, 25 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 0.992157, 0, 1 )
+text = "Play"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play" type="Label" parent="Play"]
+margin_right = 150.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 150, 25 )
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Play"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Options" type="Button" parent="."]
+margin_left = 464.0
+margin_top = 200.0
+margin_right = 614.0
+margin_bottom = 225.0
+rect_min_size = Vector2( 150, 25 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 0.992157, 0, 1 )
+text = "Options"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Options" type="Label" parent="Options"]
+margin_right = 150.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 150, 25 )
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Options"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="."]
+margin_left = 464.0
+margin_top = 232.0
+margin_right = 614.0
+margin_bottom = 257.0
+rect_min_size = Vector2( 150, 25 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 0 )
+custom_colors/font_color_pressed = Color( 1, 0.992157, 0, 1 )
+text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Label" parent="Quit"]
+margin_right = 150.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 150, 25 )
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Quit"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="Best" type="Label" parent="."]
+margin_left = 24.0
+margin_top = 56.0
+margin_right = 174.0
+margin_bottom = 81.0
+rect_min_size = Vector2( 150, 25 )
+custom_styles/normal = SubResource( 7 )
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Best:"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="."]
+margin_left = 24.0
+margin_top = 88.0
+margin_right = 174.0
+margin_bottom = 113.0
+rect_min_size = Vector2( 150, 25 )
+custom_styles/normal = SubResource( 7 )
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Score:"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Version" type="Label" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -160.0
+margin_top = -40.0
+margin_right = -10.0
+margin_bottom = -8.0
+rect_min_size = Vector2( 150, 25 )
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Version: 1.0.0
+m0h49 studio"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MenuOptions" type="MarginContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -56.0
+margin_top = -380.0
+margin_right = 104.0
+margin_bottom = -190.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MenuOptions"]
+margin_right = 160.0
+margin_bottom = 190.0
+alignment = 1
+
+[node name="Mute" type="CheckButton" parent="MenuOptions/VBoxContainer"]
+margin_top = 4.0
+margin_right = 160.0
+margin_bottom = 36.0
+rect_min_size = Vector2( 150, 25 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 0.992157, 0, 1 )
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MenuOptions/VBoxContainer/Mute"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 150, 25 )
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Mute"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Music" type="CheckButton" parent="MenuOptions/VBoxContainer"]
+margin_top = 40.0
+margin_right = 160.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 160, 25 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 0.992157, 0, 1 )
+pressed = true
+align = 1
+
+[node name="Label" type="Label" parent="MenuOptions/VBoxContainer/Music"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 150, 25 )
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Music"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VolumeHSlider" type="HSlider" parent="MenuOptions/VBoxContainer"]
+margin_top = 76.0
+margin_right = 160.0
+margin_bottom = 92.0
+custom_icons/grabber_disabled = ExtResource( 8 )
+custom_icons/grabber_highlight = ExtResource( 8 )
+custom_icons/grabber = ExtResource( 8 )
+custom_styles/slider = SubResource( 10 )
+custom_styles/grabber_area_highlight = SubResource( 11 )
+custom_styles/grabber_area = SubResource( 11 )
+min_value = -42.0
+max_value = 22.0
+value = -30.0
+
+[node name="Volume" type="HScrollBar" parent="MenuOptions/VBoxContainer"]
+visible = false
+margin_top = 98.0
+margin_right = 160.0
+margin_bottom = 133.0
+rect_min_size = Vector2( 150, 35 )
+custom_styles/grabber_highlight = SubResource( 12 )
+custom_styles/grabber = SubResource( 13 )
+custom_styles/scroll = SubResource( 14 )
+custom_styles/grabber_pressed = SubResource( 12 )
+value = 20.0
+rounded = true
+
+[node name="FPS" type="CheckButton" parent="MenuOptions/VBoxContainer"]
+margin_top = 96.0
+margin_right = 160.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 150, 25 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 0.992157, 0, 1 )
+align = 1
+
+[node name="Label" type="Label" parent="MenuOptions/VBoxContainer/FPS"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 150, 25 )
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "FPS"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="For_Kids" type="Button" parent="MenuOptions/VBoxContainer"]
+margin_top = 132.0
+margin_right = 160.0
+margin_bottom = 157.0
+rect_min_size = Vector2( 150, 25 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 0 )
+custom_colors/font_color_pressed = Color( 1, 0.992157, 0, 1 )
+text = "For Kids"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="For_Kids" type="Label" parent="MenuOptions/VBoxContainer/For_Kids"]
+margin_right = 160.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 150, 25 )
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "For Kids"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="About" type="Button" parent="MenuOptions/VBoxContainer"]
+margin_top = 161.0
+margin_right = 160.0
+margin_bottom = 186.0
+rect_min_size = Vector2( 150, 25 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 0 )
+custom_colors/font_color_pressed = Color( 1, 0.992157, 0, 1 )
+text = "About"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="About" type="Label" parent="MenuOptions/VBoxContainer/About"]
+margin_right = 160.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 150, 25 )
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "About"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="MenuOptions"]
+
+[connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="Options" to="." method="_on_Options_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
+[connection signal="pressed" from="MenuOptions/VBoxContainer/Mute" to="." method="_on_Mute_pressed"]
+[connection signal="pressed" from="MenuOptions/VBoxContainer/Music" to="." method="_on_Music_pressed"]
+[connection signal="value_changed" from="MenuOptions/VBoxContainer/VolumeHSlider" to="." method="_on_Volume_value_changed"]
+[connection signal="value_changed" from="MenuOptions/VBoxContainer/Volume" to="." method="_on_Volume_value_changed"]
+[connection signal="pressed" from="MenuOptions/VBoxContainer/FPS" to="." method="_on_FPS_pressed"]
+[connection signal="pressed" from="MenuOptions/VBoxContainer/For_Kids" to="." method="_on_For_Kids_pressed"]
+[connection signal="pressed" from="MenuOptions/VBoxContainer/About" to="." method="_on_About_pressed"]

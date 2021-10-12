@@ -1,0 +1,435 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Font/Avenixel-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scenes/About/About.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/World/GrassBackgraund.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=5]
+size = 24
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.290196, 0.388235, 0.192157, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.290196, 0.388235, 0.192157, 1 )
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color( 0, 0, 0, 0.705882 )
+shadow_size = 1
+shadow_offset = Vector2( 4, 4 )
+
+[sub_resource type="Animation" id=7]
+resource_name = "Credits"
+length = 40.0
+step = 1.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/FixCentr/Control:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 3, 4, 5, 7, 8, 9, 11, 12, 13, 15, 16, 17, 19, 20, 21, 23, 24, 25, 27, 28, 29, 31, 32, 33, 35, 36, 37, 39, 40 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -300, -312 ), Vector2( -300, -56 ), Vector2( -300, -56 ), Vector2( -300, -312 ), Vector2( -300, -56 ), Vector2( -300, -56 ), Vector2( -300, -312 ), Vector2( -300, -56 ), Vector2( -300, -56 ), Vector2( -300, -312 ), Vector2( -300, -56 ), Vector2( -300, -56 ), Vector2( -300, -312 ), Vector2( -300, -56 ), Vector2( -300, -56 ), Vector2( -300, -312 ), Vector2( -300, -56 ), Vector2( -300, -56 ), Vector2( -300, -312 ), Vector2( -300, -56 ), Vector2( -300, -56 ), Vector2( -300, -312 ), Vector2( -300, -56 ), Vector2( -300, -56 ), Vector2( -300, -312 ), Vector2( -300, -56 ), Vector2( -300, -56 ), Vector2( -300, -312 ), Vector2( -300, -56 ), Vector2( -300, -56 ), Vector2( -300, -312 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CanvasLayer/FixCentr/Control/Label1:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CanvasLayer/FixCentr/Control/Label2:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 4, 8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CanvasLayer/FixCentr/Control/Label3:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 8, 12 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CanvasLayer/FixCentr/Control/Label4:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 12, 16 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("CanvasLayer/FixCentr/Control/Label5:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 16, 20 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("CanvasLayer/FixCentr/Control/Label6:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 20, 24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("CanvasLayer/FixCentr/Control/Label7:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 24, 28 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("CanvasLayer/FixCentr/Control/Label8:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 28, 32 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("CanvasLayer/FixCentr/Control/Label9:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 32, 36 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("CanvasLayer/FixCentr/Control/Label10:visible")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 36 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=8]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/FixCentr/Control:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 16 ) ]
+}
+
+[node name="About" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -288.0
+margin_top = 256.0
+margin_right = 288.0
+margin_bottom = 288.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+stretch_mode = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="FixCentr" type="Control" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -20.0
+margin_right = 20.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="CanvasLayer/FixCentr"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_top = 16.0
+margin_right = 640.0
+margin_bottom = 56.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label1" type="Label" parent="CanvasLayer/FixCentr/Control"]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -288.0
+margin_top = 128.0
+margin_right = 288.0
+margin_bottom = 160.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+text = "This project was created using YouTube video 
+tutorials while learning about Godot Engine. 
+I am not a programmer or an artist. 
+The game has a lot of crutches and bugs. 
+I will be glad to advice and tips."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="CanvasLayer/FixCentr/Control"]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -288.0
+margin_top = 128.0
+margin_right = 288.0
+margin_bottom = 160.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+text = "Music: Canon Rock by JerryC"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="CanvasLayer/FixCentr/Control"]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -288.0
+margin_top = 128.0
+margin_right = 288.0
+margin_bottom = 160.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+text = "Special thanks to the YouTube channels 
+and their authors: 
+
+HeartBeast 
+Quantum Code 
+Solo CodeNet 
+GDQuest"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="CanvasLayer/FixCentr/Control"]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -288.0
+margin_top = 128.0
+margin_right = 288.0
+margin_bottom = 160.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+text = "Godot Engine communities 
+in networks and channels discord, telegram, vk: 
+vk.com/godot_engine 
+t.me/godotengineenglish 
+vk.com/game_constructors "
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label5" type="Label" parent="CanvasLayer/FixCentr/Control"]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -288.0
+margin_top = 128.0
+margin_right = 288.0
+margin_bottom = 160.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+text = "and web sites: 
+davidepesce.com 
+opengameart.org"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label6" type="Label" parent="CanvasLayer/FixCentr/Control"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -288.0
+margin_top = 128.0
+margin_right = 288.0
+margin_bottom = 160.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+text = "and all"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label7" type="Label" parent="CanvasLayer/FixCentr/Control"]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -288.0
+margin_top = 128.0
+margin_right = 288.0
+margin_bottom = 160.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+text = "And also a huge thanks to 
+the developers of Godot Engine 
+and those who support them and contributes"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label8" type="Label" parent="CanvasLayer/FixCentr/Control"]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -288.0
+margin_top = 128.0
+margin_right = 288.0
+margin_bottom = 160.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+text = "Thanks to all who in one way or another support 
+the community and the development 
+of OpenSource and Free Software. 
+I think this is very important 
+for gaining knowledge and developing society"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label9" type="Label" parent="CanvasLayer/FixCentr/Control"]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -288.0
+margin_top = 128.0
+margin_right = 288.0
+margin_bottom = 160.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+text = "Sources on github. I warn you, seeing my code, 
+it might be a nightmare for you."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label10" type="Label" parent="CanvasLayer/FixCentr/Control"]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -288.0
+margin_top = 128.0
+margin_right = 288.0
+margin_bottom = 160.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+text = "I want to dedicate this game to my son Alim. 
+I hope he does not repeat my mistakes ..."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Credits = SubResource( 7 )
+anims/RESET = SubResource( 8 )

@@ -1,0 +1,77 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\mamae\\Documents\\App\\Godot\\GodotProjects\\lolcat\\android\\build\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\mamae\\.gradle\\caches\\transforms-2\\files-2.1\\065fbdd63fa4df6cb8ddebabbd4b70a6\\jetified-play-services-basement-17.6.0\\res\\values-zh-rTW\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "251",
+                        "endColumns": "161",
+                        "endOffsets": "412"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "105",
+                        "endColumns": "161",
+                        "endOffsets": "262"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mamae\\.gradle\\caches\\transforms-2\\files-2.1\\9f2af2327a2ee4df66d476977a324666\\core-1.2.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "18",
+                        "startColumns": "4",
+                        "startOffsets": "1479",
+                        "endColumns": "100",
+                        "endOffsets": "1575"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mamae\\.gradle\\caches\\transforms-2\\files-2.1\\7e3efbf6a9af1dae5c87516b1879b5e3\\jetified-play-services-ads-20.2.0\\res\\values-zh-rTW\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "203,292,386,466,570,654,753,845,906,981,1041,1101,1165,1236",
+                        "endColumns": "88,93,79,103,83,98,91,60,74,59,59,63,70,61",
+                        "endOffsets": "291,385,465,569,653,752,844,905,980,1040,1100,1164,1235,1297"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "328,421,519,603,711,799,902,998,1063,1142,1206,1270,1338,1413",
+                        "endColumns": "92,97,83,107,87,102,95,64,78,63,63,67,74,65",
+                        "endOffsets": "416,514,598,706,794,897,993,1058,1137,1201,1265,1333,1408,1474"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mamae\\Documents\\App\\Godot\\GodotProjects\\lolcat\\android\\build\\res\\values-zh-rTW\\godot_project_name_string.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "1",
+                        "startOffsets": "112",
+                        "endColumns": "57",
+                        "endOffsets": "168"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "267",
+                        "endColumns": "60",
+                        "endOffsets": "323"
+                    }
+                }
+            ]
+        }
+    ]
+}
